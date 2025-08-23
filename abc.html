@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>TODO LIST</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Splash Screen -->
+  <div id="splashScreen" class="splash-screen">
+    <h1>Green Productivity</h1>
+    <p>Let’s grow your goals!</p>
+    <button onclick="enterApp()">Let’s Go</button>
+  </div>
+
+  <!-- Main App -->
+  <div id="mainApp" style="display: none;">
+    <div class="xyz">
+      <center>
+        <h1>Small steps every day lead to big results.</h1>
+       <!-- Calendar Container -->
+       <div id="calendar">
+  <!-- Spiral Binding -->
+  <div class="spiral">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- Date Display -->
+  <p id="currentDate"></p>
+</div>
+
+        <div class="cb">
+          <h2>PROGRESSION</h2>
+          <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+          </div>
+          <p id="progressText"></p>
+        </div>
+      </center>
+    </div>
+    <center>
+      <div class="abc">
+        <input type="text" id="taskInput" name="yourName" placeholder="Enter your task">
+        <button id="addTaskBtn">ADD</button>
+        <ul id="taskList"></ul>
+        <button id="resetAllBtn">Reset All</button>
+      </div>
+    </center>
+    <div id="celebrationBanner">WELL DONE!</div>
+    <audio id="fireworkSound" src="https://www.fesliyanstudios.com/play-mp3/387" preload="auto"></audio>
+    <audio id="cheerSound" src="https://www.fesliyanstudios.com/play-mp3/6766" preload="auto"></audio>
+  </div>
+
+  <script src="script.js">
+    
+  </script>
+</body>
+</html>

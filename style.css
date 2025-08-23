@@ -1,0 +1,333 @@
+body {
+  background-color: #F5FFFA;
+  border: 20px solid #FFC107;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.xyz {
+  margin-top: 30px;
+}
+
+.cb h2 {
+  font-size: 24px;
+  color: #FFC107;
+}
+
+#calendar {
+  position: relative;
+  width: 300px;
+  margin: 40px auto;
+  padding: 40px 20px 20px 20px;
+  background: #fff8dc; /* Light notepad color */
+  border: 2px solid #d4af37; /* Golden border */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+#currentDate {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.spiral {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+  right: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.spiral span {
+  width: 12px;
+  height: 12px;
+  background-color: #444;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+
+.abc {
+  background-color: lavender;
+  color: #FFC107;
+  padding: 50px;
+  border-radius: 15px;
+  font-size: 12px;
+  align-self: flex-start;
+  margin-top: 200px;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 400px;
+  border: 2px solid black;
+  padding-bottom: 200px;
+}
+
+input {
+  width: 500px;
+  padding: 12px 20px;
+  font-size: 19px;
+  border: 2px solid black;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+button {
+  background-color: #FFC107;
+  border: none;
+  border-radius: 2px;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+  margin-left: 5px;
+  transition: 0.3s;
+  border-radius: 6px
+}
+
+
+button:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+
+
+#taskList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#taskList li {
+  width: 500px;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 12px 20px;
+  font-size: 19px;
+  border: 2px solid #0c0b0b;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  color: black;
+  margin-left: 160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+#taskList li:hover {
+  background-color: #f9f9f9;
+  border-color: black;
+}
+
+input, #taskList li {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.complete-btn {
+  background-color: #FFC107;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  height: 50px;
+  width: 120px;
+  border: 2px solid black;
+}
+
+.complete-btn:hover {
+  background-color: #218838;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-text {
+  flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.task-box {
+  background-color: #fff;
+  padding: 12px 20px;
+  font-size: 19px;
+  border: 2px solid #0c0b0b;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  color: black;
+  width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.progress-container {
+  width: 80%;
+  height: 25px;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #FFC107;
+  transition: width 0.4s ease;
+}
+
+#progressText {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+#celebrationBanner {
+  display: none;
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFC107;
+  color: black;
+  padding: 50px 80px;
+  border-radius: 20px;
+  font-size: 50px;
+  font-weight: bold;
+  box-shadow: 0 0 40px rgba(0,0,0,0.4);
+  z-index: 9999;
+  animation: fadeInScale 1s ease-in-out forwards;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translate(-50%, -50%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translate(-50%, -50%);
+  }
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: 2px solid black;
+  margin-left: 5px;
+  padding: 10px 14px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .abc {
+  background-color: #2c2c2c;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode input {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-color: #fff;
+}
+
+.dark-mode button {
+  background-color: #ff9800;
+  color: #000;
+  border-color: #fff;
+}
+
+.dark-mode #taskList li {
+  background-color: #1e1e1e;
+  color: #fff;
+  border-color: #fff;
+}
+
+.dark-mode .completed {
+  color: gray;
+}
+
+.dark-mode #celebrationBanner {
+  background-color: #ff9800;
+  color: black;
+}
+
+
+
+.splash-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #a5d6a7; /* soft green */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 10000;
+}
+
+.splash-screen h1 {
+  font-size: 48px;
+  color: #1b5e20;
+  margin-bottom: 10px;
+}
+
+.splash-screen p {
+  font-size: 20px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.splash-screen button {
+  background-color: #388e3c;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body, input, button, h1, h2, li, #progressText {
+  font-family: 'Poppins', sans-serif;
+}
