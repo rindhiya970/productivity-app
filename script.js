@@ -116,11 +116,3 @@ function enterApp() {
 
     window.onload = loadTasks;
 
-  function updateDate() {
-    const dateElement = document.getElementById('currentDate');
-    const today = new Date();
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    dateElement.textContent = today.toLocaleDateString('en-US', options);
-  }
-
-  updateDate(); // Call this on load
