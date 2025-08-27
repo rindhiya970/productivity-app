@@ -320,7 +320,7 @@ input, #taskList li {
 
 .splash-screen button {
   background-color: #3c9e41;
-  color: white;
+  color: rgba(255, 255, 255, 0.897);
   padding: 12px 25px;
   font-size: 18px;
   border: none;
