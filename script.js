@@ -76,7 +76,7 @@ function enterApp() {
         }
         taskList.appendChild(taskElement);
       });
-    
+       updateProgressBar();
     }
 
     function resetAllTasks() {
