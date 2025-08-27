@@ -100,22 +100,7 @@ function enterApp() {
       }
     }
 
-    function celebrate() {
-      confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
-      document.getElementById('fireworkSound').play();
-      setTimeout(() => document.getElementById('cheerSound').play(), 700);
-
-      const banner = document.getElementById('celebrationBanner');
-      banner.style.display = 'block';
-      setTimeout(() => banner.style.display = 'none', 5000);
-
-      setTimeout(() => {
-        alert('Woooohooo! You nailed it! Every task completed. You are unstoppable!');
-      }, 1500);
-    }
-
-    window.onload = loadTasks;
-
+   
   function updateDate() {
     const dateElement = document.getElementById('currentDate');
     const today = new Date();
