@@ -50,7 +50,10 @@
         updateProgressBar();
       });
 
-      
+      li.appendChild(taskText);
+      li.appendChild(completeBtn);
+      li.appendChild(deleteBtn);
+
       return li;
     }
 
