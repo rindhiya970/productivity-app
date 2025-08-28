@@ -89,7 +89,7 @@
 
     function updateProgressBar() {
       const totalTasks = document.querySelectorAll('#taskList li').length;
-      const completedTasks = document.querySelectorAll('.completed').length;
+      const completedTasks = document.querySelectorAll('').length;
 
       const percentage = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
       document.getElementById('progressBar').style.width = percentage + '%';
