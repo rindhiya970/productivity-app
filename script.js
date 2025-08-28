@@ -1,4 +1,7 @@
-
+   function enterApp() {
+      document.getElementById('splashScreen').style.display = 'none';
+      document.getElementById('mainApp').style.display = 'block';
+    }
 
     const taskInput = document.getElementById('taskInput');
     const addTaskBtn = document.getElementById('addTaskBtn');
