@@ -107,11 +107,7 @@ button:hover {
 
 
 
-#taskList {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 20px;
-}
+
 
 #taskList li {
   width: 500px;
