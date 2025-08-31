@@ -23,7 +23,7 @@ body {
   width: 300px;
   margin: 40px auto;
   padding: 40px 20px 20px 20px;
-  background: #fff8dc; /* Light notepad color */
+  background: #fff8dc; 
   border: 2px solid #d4af37; /* Golden border */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
