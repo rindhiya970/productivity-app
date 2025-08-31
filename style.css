@@ -24,7 +24,7 @@ body {
   margin: 40px auto;
   padding: 40px 20px 20px 20px;
   background: #fff8dc; 
-  border: 2px solid #d4af37; /* Golden border */
+  border: 2px solid #d4af37; 
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   font-family: 'Courier New', Courier, monospace;
