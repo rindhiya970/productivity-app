@@ -202,7 +202,12 @@ input, #taskList li {
   transition: width 0.4s ease;
 }
 
-
+#progressText {
+  text-align: center;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
 
 #celebrationBanner {
   display: none;
