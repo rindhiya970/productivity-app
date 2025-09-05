@@ -124,4 +124,4 @@
   }
  // Call this 
  // 
-  updateDate();on load
+  updateDate();
