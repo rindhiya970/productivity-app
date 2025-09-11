@@ -55,6 +55,7 @@
       li.appendChild(deleteBtn);
        
       
+      return li;
     }
 
     function saveTasks() {
