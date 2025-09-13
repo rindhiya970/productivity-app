@@ -113,7 +113,7 @@
 
       setTimeout(() => {
         alert('Woooohoooo! You nailed it! Every task completed. You are unstoppable!');
-      }, 1500);
+      }, 150);
     }
 
     window.onload = loadTasks;
