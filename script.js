@@ -125,5 +125,5 @@
     dateElement.textContent = today.toLocaleDateString('en-US', options);
   }
  // Call this 
- // 
+ 
   updateDate();
