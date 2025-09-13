@@ -112,7 +112,7 @@
       setTimeout(() => banner.style.display = 'none', 5000);
 
       setTimeout(() => {
-        alert('Woooohoooo! You nailed it! Every task completed. You are unstoppable!');
+        alert('Woooohoooo!  You nailed it! Every task completed. You are unstoppable!');
       }, 1500);
     }
 
