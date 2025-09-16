@@ -102,7 +102,7 @@
     }
 
      
-    function celebrate() {
+    function celebrate() {     
       confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
       document.getElementById('fireworkSound').play();
       setTimeout(() => document.getElementById('cheerSound').play(), 700);
