@@ -17,7 +17,7 @@
         const newTask = createTaskElement(taskValue);
         taskList.appendChild(newTask);
         taskInput.value = '';
-        saveTasks();
+        saveTasks(); 
         updateProgressBar();
       } else {
         alert('Please enter a task!');
