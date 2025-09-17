@@ -9,7 +9,7 @@
     const resetAllBtn = document.getElementById('resetAllBtn');
 
     addTaskBtn.addEventListener('click', addTask);
-    resetAllBtn.addEventListener('click', resetAllTasks);
+    resetAllBtn.addEventListener('click', resetAllTasks);   
 
     function addTask() {
       const taskValue = taskInput.value.trim();
