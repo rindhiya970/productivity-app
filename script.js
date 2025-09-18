@@ -30,7 +30,7 @@
 
       const taskText = document.createElement('span');
       taskText.textContent = taskTextValue;
-      taskText.classList.add('task-text');
+      taskText.classList.add('task-text');    
 
       const completeBtn = document.createElement('button');
       completeBtn.textContent = '✅';
