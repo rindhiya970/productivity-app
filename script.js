@@ -6,7 +6,7 @@
     const taskInput = document.getElementById('taskInput');
     const addTaskBtn = document.getElementById('addTaskBtn');
     const taskList = document.getElementById('taskList');
-    const resetAllBtn = document.getElementById('resetAllBtn');  
+    const resetAllBtn = document.getElementById('resetAllBtn');      
 
     addTaskBtn.addEventListener('click', addTask);  
     resetAllBtn.addEventListener('click', resetAllTasks);   
