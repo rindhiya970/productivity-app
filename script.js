@@ -14,7 +14,7 @@
     function addTask() {
       const taskValue = taskInput.value.trim();
       if (taskValue !== '') {   
-        const newTask = createTaskElement(taskValue);
+        const newTask = createTaskElement(taskValue);     
         taskList.appendChild(newTask);
         taskInput.value = '';
         saveTasks(); 
