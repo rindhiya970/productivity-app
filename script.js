@@ -28,7 +28,7 @@
       const li = document.createElement('li');
       li.classList.add('task-item');
 
-      const taskText = document.createElement('span');
+      const taskText = document.createElement('span');     
       taskText.textContent = taskTextValue;
       taskText.classList.add('task-text');    
 
