@@ -13,7 +13,7 @@
 
     function addTask() {
       const taskValue = taskInput.value.trim();
-      if (taskValue !== '') {
+      if (taskValue !== '') {   
         const newTask = createTaskElement(taskValue);
         taskList.appendChild(newTask);
         taskInput.value = '';
