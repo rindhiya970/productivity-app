@@ -47,7 +47,7 @@
       deleteBtn.addEventListener('click', function () {
         li.remove();
         saveTasks();
-        updateProgressBar();
+        updateProgressBar();    
       });
 
       li.appendChild(taskText);
