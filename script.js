@@ -33,7 +33,7 @@
       taskText.classList.add('task-text');    
 
       const completeBtn = document.createElement('button');
-      completeBtn.textContent = '✅';
+      completeBtn.textContent = '✅';        
       completeBtn.classList.add('complete-btn');
       completeBtn.addEventListener('click', function () {
         taskText.classList.toggle('completed');
