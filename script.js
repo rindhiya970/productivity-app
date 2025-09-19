@@ -12,7 +12,7 @@
     resetAllBtn.addEventListener('click', resetAllTasks);       
 
     function addTask() {
-      const taskValue = taskInput.value.trim();
+      const taskValue = taskInput.value.trim();      
       if (taskValue !== '') {   
         const newTask = createTaskElement(taskValue);     
         taskList.appendChild(newTask);
