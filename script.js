@@ -3,7 +3,7 @@
       document.getElementById('mainApp').style.display = 'block';
     }
 
-    const taskInput = document.getElementById('taskInput');
+    const taskInput = document.getElementById('taskInput');  
     const addTaskBtn = document.getElementById('addTaskBtn');
     const taskList = document.getElementById('taskList');
     const resetAllBtn = document.getElementById('resetAllBtn');      
