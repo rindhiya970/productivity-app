@@ -20,7 +20,7 @@
         saveTasks(); 
         updateProgressBar();
       } else {
-        alert('Please enter a task!');
+        alert('Please enter a task!');      
       }
     }
 
