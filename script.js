@@ -96,7 +96,7 @@
       document.getElementById('progressBar').style.width = percentage + '%';
       document.getElementById('progressText').textContent = `${completedTasks} of ${totalTasks} tasks completed (${percentage}%)`;
 
-      if (percentage === 100 && totalTasks !== 0) {
+      if (percentage === 100 && totalTasks !== 0) {   
         celebrate();
       }
     }
