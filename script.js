@@ -116,7 +116,7 @@
       }, 1500);
     }
 
-    window.onload = loadTasks;  
+    window.onload = loadTasks;        
 
   function updateDate() {     
     const dateElement = document.getElementById('currentDate');
