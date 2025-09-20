@@ -325,6 +325,9 @@ input, #taskList li {
   border-radius: 8px;
   cursor: pointer;
 }
+
+
+
 body, input, button, h1, h2, li, #progressText {
   font-family: 'Poppins', sans-serif;
 }
