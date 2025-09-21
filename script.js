@@ -77,7 +77,7 @@
         }
         taskList.appendChild(taskElement);
       });
-       updateProgressBar();
+       updateProgressBar();      
     }
 
     function resetAllTasks() {              
