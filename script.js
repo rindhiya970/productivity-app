@@ -22,13 +22,13 @@
       } else {
         alert('Please enter a task!');      
       }
-    }
+    }              
 
     function createTaskElement(taskTextValue) {
       const li = document.createElement('li');
       li.classList.add('task-item');
 
-      const taskText = document.createElement('span');     
+      const taskText = document.createElement('span');               
       taskText.textContent = taskTextValue;
       taskText.classList.add('task-text');    
 
@@ -88,7 +88,18 @@
       }
     }
 
-    
+    function updateProgressBar() {          
+      const totalTasks = document.querySelectorAll('#taskList li').length;
+      const completedTasks = document.querySelectorAll('.completed').length;
+
+      const percentage = totalTasks === 0 ? 0 : Math.round((completedTasks / totalTasks) * 100);
+      document.getElementById('progressBar').style.width = percentage + '%';
+      document.getElementById('progressText').textContent = `${completedTasks} of ${totalTasks} tasks completed (${percentage}%)`;
+
+      if (percentage === 100 && totalTasks !== 0) {   
+        celebrate();
+      }      
+    }        
     function celebrate() {        
       confetti({ particleCount: 200, spread: 100, origin: { y: 0.6 } });
       document.getElementById('fireworkSound').play();             
