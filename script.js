@@ -39,7 +39,7 @@
         taskText.classList.toggle('completed');      
         saveTasks();
         updateProgressBar();
-      });
+      });      
 
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = '❌';
