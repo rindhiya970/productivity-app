@@ -16,7 +16,7 @@
       if (taskValue !== '') {   
         const newTask = createTaskElement(taskValue);     
         taskList.appendChild(newTask);
-        taskInput.value = '';
+        taskInput.value = '';       
         saveTasks(); 
         updateProgressBar();
       } else {
