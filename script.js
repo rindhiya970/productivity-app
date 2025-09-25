@@ -37,7 +37,7 @@
       completeBtn.classList.add('complete-btn');
       completeBtn.addEventListener('click', function () {
         taskText.classList.toggle('completed');        
-        saveTasks();
+        saveTasks();    
         updateProgressBar();   
       });      
 
