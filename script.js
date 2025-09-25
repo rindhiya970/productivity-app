@@ -38,7 +38,7 @@
       completeBtn.addEventListener('click', function () {
         taskText.classList.toggle('completed');        
         saveTasks();
-        updateProgressBar();
+        updateProgressBar();   
       });      
 
       const deleteBtn = document.createElement('button');
