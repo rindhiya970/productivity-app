@@ -44,7 +44,7 @@
       const deleteBtn = document.createElement('button');    
       deleteBtn.textContent = '❌';
       deleteBtn.classList.add('complete-btn');
-      deleteBtn.addEventListener('click', function () {
+      deleteBtn.addEventListener('click', function () {      
         li.remove();
         saveTasks();
         updateProgressBar();    
