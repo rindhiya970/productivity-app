@@ -26,7 +26,7 @@
 
     function createTaskElement(taskTextValue) {
       const li = document.createElement('li');
-      li.classList.add('task-item');
+      li.classList.add('task-item');     
 
       const taskText = document.createElement('span');               
       taskText.textContent = taskTextValue;     
