@@ -8,7 +8,7 @@
     const taskList = document.getElementById('taskList');
     const resetAllBtn = document.getElementById('resetAllBtn');      
 
-    addTaskBtn.addEventListener('click', addTask);  
+    addTaskBtn.addEventListener('click', addTask);         
     resetAllBtn.addEventListener('click', resetAllTasks);       
 
     function addTask() {
@@ -25,8 +25,8 @@
     }              
 
     function createTaskElement(taskTextValue) {
-      const li = document.createElement('li');
-      li.classList.add('task-item');     
+      const li = document.createElement('li');     
+      li.classList.add('task-item');         
 
       const taskText = document.createElement('span');               
       taskText.textContent = taskTextValue;     
@@ -57,11 +57,11 @@
       
       return li;
     }
-
+        
     function saveTasks() {
       const tasks = [];
       document.querySelectorAll('#taskList li').forEach(taskItem => {
-        const taskText = taskItem.querySelector('span').textContent;
+        const taskText = taskItem.querySelector('span').textContent; 
         const isCompleted = taskItem.querySelector('span').classList.contains('completed');
         tasks.push({ text: taskText, completed: isCompleted });
       });
