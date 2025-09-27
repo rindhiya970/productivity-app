@@ -88,7 +88,7 @@
       }
     }
 
-    function updateProgressBar() {          
+    function updateProgressBar() {                
       const totalTasks = document.querySelectorAll('#taskList li').length;
       const completedTasks = document.querySelectorAll('.completed').length;
 
