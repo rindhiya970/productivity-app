@@ -24,7 +24,7 @@
       }
     }              
 
-    function createTaskElement(taskTextValue) {
+    function createTaskElement(taskTextValue) {   
       const li = document.createElement('li');     
       li.classList.add('task-item');         
 
