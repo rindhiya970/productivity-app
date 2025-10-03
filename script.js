@@ -58,7 +58,7 @@
       return li;
     }
         
-    function saveTasks() {
+    function saveTasks() {      
       const tasks = [];
       document.querySelectorAll('#taskList li').forEach(taskItem => {
         const taskText = taskItem.querySelector('span').textContent; 
