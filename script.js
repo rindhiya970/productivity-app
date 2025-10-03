@@ -83,7 +83,7 @@
     function resetAllTasks() {              
       if (confirm('Are you sure you want to delete all tasks?')) {
         taskList.innerHTML = '';
-        localStorage.removeItem('tasks');
+        localStorage.removeItem('tasks');         
         updateProgressBar();
       }
     }
