@@ -75,7 +75,7 @@
         if (task.completed) {
           taskElement.querySelector('span').classList.add('completed');
         }
-        taskList.appendChild(taskElement);
+        taskList.appendChild(taskElement);        
       });      
        updateProgressBar();      
     }          
