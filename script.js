@@ -76,9 +76,9 @@
           taskElement.querySelector('span').classList.add('completed');
         }
         taskList.appendChild(taskElement);
-      });
+      });      
        updateProgressBar();      
-    }
+    }          
 
     function resetAllTasks() {              
       if (confirm('Are you sure you want to delete all tasks?')) {
